@@ -1,0 +1,129 @@
+.post-18 .entry-content{
+	display: flex;
+
+	.schedule-content{
+		width: 100%;
+		
+		.class-container{
+			display: flex;
+
+			.single-class{
+				flex: 1;
+				padding: 1.2em;
+        margin-right: 15px;
+        background-color: white;
+        border-radius: 10px;
+        border: 1px solid $blue;
+        p {list-style: none;
+					text-align: justify;
+					margin: 0;
+					padding: 0;}
+          h1  {
+						font-size: 1.5em;
+						font-weight: bold;
+            text-align: center;
+            margin-bottom: 5px;
+					}
+				}
+        .single-class:last-child{
+          margin-right: 0;
+        }
+      }
+    }
+}
+
+.schedule-container {
+  margin-top: 20px;
+  border: 1px solid $blue;
+  border-radius: 10px;
+}
+
+.schedule-entry {
+  background-color: #fff;
+  border: 10px solid white;
+  border-radius: 10px;
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 0 3em 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100%;
+  margin: 0 auto;
+  font-size: 1em;
+}
+.schedule-cell {
+  box-sizing: border-box;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  border-radius: 5px;
+  flex-grow: 1;
+  width: 100%;
+  padding: 0.8em 1.2em;
+  overflow: hidden;
+  border: solid 1px white;
+  font-size: 16px;
+  background-image: linear-gradient(to top, rgba(151,149,240,.5) 0%, rgba(251,200,212,.5) 100%);
+}
+
+.schedule-entry > p {
+        margin-left: auto;
+        margin-right: auto;
+}
+
+
+.schedule-cell > h3 {font-size: 1em;}
+
+.schedule-entry--4cols > .schedule-cell {width: 25%;}
+
+.schedule-cell > strong {color: #434d57;}
+			
+		
+//MEDIA BREAKS
+@media (max-width: 1200px) {
+  
+}
+@media (max-width: 992px) {
+   
+}
+@media (max-width: 768px) {
+  .post-18 .entry-content .schedule-content .class-container{
+    flex-direction: column;
+    .single-class{
+      margin-right: 0;
+      margin-bottom: 20px;             
+    }
+    .single-class:last-child{
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .post-18 .entry-content .schedule-content .class-container{
+    .single-class{
+      margin: 0;
+      border: 0;
+      border-radius: 0;
+      border-bottom: 1px solid $blue;             
+    }
+  }
+  .schedule-container {
+    margin-top: 0;
+    border-radius: 0;
+    border: 0;
+  }
+  .schedule-entry {
+    padding: 20px 0 20px 0;
+    border-radius: 0;
+    border: 0;
+  }
+}
+@media (max-width: 320px) {
+ 
+}
+		
+

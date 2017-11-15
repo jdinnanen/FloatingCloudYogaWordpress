@@ -1,0 +1,12 @@
+.acf-map {
+	height: 400px;
+	border: #ccc solid 1px;
+	margin: auto auto;
+}
+
+/* fixes potential theme css conflict */
+.acf-map img {
+   max-width: inherit !important;
+}
+
+

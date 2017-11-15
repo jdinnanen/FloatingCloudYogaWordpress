@@ -1,0 +1,173 @@
+//Convert px to em
+@function em($px, $base: $base-font-size) {
+  @return ($px / $base) * 1em;
+}
+
+.logo {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  .logo-image {
+
+    width: 20%;
+    img {
+      width: 50%;
+      display: none;
+      transform: translate(50%);
+      max-width: 100px;
+    }
+  }
+  .site-title {
+    width: 60%;
+    h1 {
+      width: 100%;
+      font-family: $font-chewy;
+      text-shadow: 2px 2px #3f65ed;
+      font-size: 2.7em;
+      letter-spacing: 4px;
+      color: white;
+      margin: 20px 0;
+      text-align: center;
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+
+  }
+  .social-top {
+    width: 20%;
+  }
+}
+
+#social-buttons {
+  li {display:inline-block;}
+  padding-left: 0;
+  font-size: 2em;
+  a, a:hover, a:active {
+    padding: 0;
+    color: white;
+    font-size: 1em;
+    background: none;
+  }
+    a:hover {
+        position: relative;
+        bottom: 2px;
+    }
+}
+
+.site-info {
+height: 100px;
+text-align: center;
+margin-top: 10px;
+font-size: 13px;
+color: white;
+
+    a, a:hover, a:active {
+        color: white;
+    }
+}
+
+// Navigation, including mobile version
+nav {
+background: rgba(255, 255, 255, 0);
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    a {
+        padding: .3125em .9375em;
+        display: flex;
+        text-transform: uppercase;
+        color: white;
+        border-radius: 30px;
+        background: $blue;
+        margin-right: 5px;
+        &:hover, &:focus {
+        background: $pink;
+        color: white;
+        transition: all .65s ease;
+        }
+    }
+    .mobile-button a {
+      position: absolute;
+      left: -99999em;
+    }
+      .current-menu-item a {
+          background: $pink;
+      }
+  }
+  
+  @media (max-width: 800px) {
+    
+      ul {
+      flex-wrap: wrap;
+       justify-content: flex-start;
+          
+      a {
+        position: absolute;
+        left: -99999em;
+          border-radius: 0;
+        background: inherit;
+        color: black;
+          
+      }
+      &.open {
+        li {
+          width: 100%;
+          &.mobile-button a {
+          	background: $pink;
+          	color: white;
+          }
+        }
+        a {
+          position: static;
+          
+        }
+      }
+      .mobile-button {
+        a {
+          position: static;
+          background: $pink;
+          color: white;
+        }
+      }
+    }
+    a {
+      width: 100%;
+    }
+    
+  }
+}
+
+@media (max-width: 800px) {
+    nav {
+        background: white;
+    }   
+    
+}
+  
+
+
+@media (max-width: 800px) {
+  div.social-top {
+    display: none;
+  }
+}
+
+
+
+
+

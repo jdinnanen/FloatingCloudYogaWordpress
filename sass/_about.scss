@@ -1,0 +1,78 @@
+.page-id-25 .mission {
+	background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: 1px solid $blue;
+}
+
+.page-id-25 .mission > img {
+    float: left;
+    margin-right: 1.5em;
+    border: 1px solid gray;
+}
+
+.page-id-25 .mission:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.page-id-25 h2 {
+    margin-top: 0;
+}
+
+.page-id-25 .bio {
+	background: white;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid $blue;
+    img {border: 1px solid gray;}
+}
+
+.page-id-25 .bio > h2 {
+    text-align: left;
+}
+
+// MEDIA BREAKS
+@media (max-width: 1200px) {
+    #content{
+      width: 90%;
+    }
+}
+@media (max-width: 992px) {
+    #content{
+        width: 93%;
+    }
+}
+@media (max-width: 768px) {
+    #content{
+        width: 95%;
+    }
+}
+@media (max-width: 480px) {
+    .page-id-25 .mission {
+    border-radius: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border: 0;
+    border-bottom: 1px solid $blue;
+  }
+  .page-id-25 .mission > img {
+    width: 100%;
+    margin: 0 auto;
+    float: none;
+  }
+  .page-id-25 .bio {
+    border-radius: 0;
+    border: 0;
+      img {width: 100%;
+    margin: 0 auto;
+    float: none;}
+  }
+}
+@media (max-width: 320px) {
+    #content{
+        width: 100%;
+    }
+}

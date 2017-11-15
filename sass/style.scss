@@ -1,0 +1,124 @@
+/*!
+Theme Name: FloatingCloudYoga
+Theme URI: http://underscores.me/
+Author: ejej
+Author URI: http://underscores.me/
+Description: Floating Cloud Yoga
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: floatingcloudyoga
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+FloatingCloudYoga is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize 
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts and pages
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
+@import "variables-site/variables-site";
+@import "mixins/mixins-master";
+
+//ADD FONTS
+@import url('https://fonts.googleapis.com/css?family=Hind+Vadodara:300,400,500,700|Chewy');
+
+// @import url('https://fonts.googleapis.com/css?family=Chewy');
+
+@font-face {
+  font-family: 'CloudFont';
+  src: url('./fonts/Quaky.ttf')  format('truetype');
+}
+
+
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+@import "normalize";
+
+/*--------------------------------------------------------------
+# PAGES
+--------------------------------------------------------------*/
+
+body {
+    background-color: rgba(114, 33, 243, 0.7);
+    font-family: 'Hind Vadodara', sans-serif;
+}
+
+a, a:active, a:focus {
+    color: #b200ce;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #720084;
+}
+
+@import "contact";
+@import "schedule";
+@import "front-page";
+@import "about";
+@import "blog";
+@import "header";
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+@import "forms/forms";
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+@import "modules/accessibility";
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+@import "modules/clearings";
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+@import "site/site";
+
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+@import "modules/infinite-scroll";
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+
+@import "media/media";
+
+@import "maps/map";
+
+
+
+
+
+

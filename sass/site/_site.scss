@@ -1,0 +1,89 @@
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0 0 1.5em;
+}
+
+.updated:not(.published) {
+	display: none;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+#content {
+    max-width: 960px;
+    margin: 0 auto;
+    transition: width 0.5s;
+}
+
+h1.entry-title {
+    text-align: center;
+    color: white;
+    margin: 0.9em;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+ol {
+    list-style: none;
+    background: #dad9d9;
+    padding: 10px 10px 3px 10px;
+}
+
+ol article {
+    padding: 20px;
+    background-color: white;
+}
+
+//HIDE SCROLL BAR FOR TESTING SMALL SCREENS
+// html {
+//     overflow: scroll;
+//     overflow-x: hidden;
+// }
+// ::-webkit-scrollbar {
+//     width: 0px;  /* remove scrollbar space */
+//     background: transparent;  /* optional: just make scrollbar invisible */
+// }
+// /* optional: show position indicator in red */
+// ::-webkit-scrollbar-thumb {
+//     background: #FF0000;
+// }
+
+//MEDIA BREAKS
+@media (max-width: 1200px) {
+    #content{
+    	width: 90%;
+    }
+}
+@media (max-width: 992px) {
+    #content{
+        width: 93%;
+    }
+}
+@media (max-width: 768px) {
+    #content{
+        width: 95%;
+    }
+}
+@media (max-width: 480px) {
+    #content{
+        width: 100%;
+    }
+}
+@media (max-width: 320px) {
+    #content{
+        width: 100%;
+    }
+}
